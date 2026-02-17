@@ -33,14 +33,18 @@ It simulates multi-GPU training using multiple CPU processes via `torchrun`.
 ```bash
 OMP_NUM_THREADS=1 torchrun --standalone --nproc_per_node=2 ddp_train.py
 ```
+---
+
 ▶️ Run (4 processes)
 
 OMP_NUM_THREADS=1 torchrun --standalone --nproc_per_node=4 ddp_train.py
 
+---
 
 📦 Requirements
 pip install torch torchvision
 
+---
 
 ```markdown
 ## 🏷 Technologies
@@ -50,4 +54,20 @@ pip install torch torchvision
 - DistributedDataParallel (DDP)
 - torchrun
 - WSL2
+```
+---
+
+🛠 Setup Instructions
+# Clone repository
+git clone https://github.com/kenny0203/ddp-distributed-training.git
+cd ddp-distributed-training
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+
 
