@@ -33,20 +33,3 @@ It simulates multi-GPU training using multiple CPU processes via `torchrun`.
 ```bash
 OMP_NUM_THREADS=1 torchrun --standalone --nproc_per_node=2 ddp_train.py
 
-▶️ Run (4 processes)
-
-OMP_NUM_THREADS=1 torchrun --standalone --nproc_per_node=4 ddp_train.py
-
-
-📦 Requirements
-pip install torch torchvision
-
-
-```markdown
-## 🏷 Technologies
-
-- Python
-- PyTorch
-- DistributedDataParallel (DDP)
-- torchrun
-- WSL2
